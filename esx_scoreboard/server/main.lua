@@ -36,7 +36,7 @@ AddEventHandler('onResourceStart', function(resource)
 end)
 
 function AddPlayerToScoreboard(xPlayer, update)
-				local playerId = xPlayer.source
+		local playerId = xPlayer.source
                 local result = 
                     MySQL.Sync.fetchAll(
                     "SELECT firstname, lastname FROM users WHERE identifier = @identifier",
@@ -47,7 +47,7 @@ function AddPlayerToScoreboard(xPlayer, update)
 
                 local firstname = result[1].firstname
                 local lastname = result[1].lastname
-				local name = firstname.. ' ' ..lastname
+		local name = firstname.. ' ' ..lastname
 				
 
 	connectedPlayers[playerId] = {}
