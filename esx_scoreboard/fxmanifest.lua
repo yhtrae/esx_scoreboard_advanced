@@ -5,12 +5,11 @@ game 'gta5'
 description 'ESX Scoreboard'
 
 version '1.1.0'
+
 server_scripts {
 '@mysql-async/lib/MySQL.lua',
 'server/main.lua'
 }
-
-
 
 client_script 'client/main.lua'
 
